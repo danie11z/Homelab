@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Fredoka+One&family=Inter:wght@500;700&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    max-width: 1350px;
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+.logoBox{
+    width: 12.85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 5vw;
+}
+
+.siteName{
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(8px, 5vw, 1.75vw);
+}
+
+.linkHome{
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu{
+    width: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menuList{
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    width: 26vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuList li{
+    font-size: clamp(8px, 5vw, 1.2vw);
+}
+
+.menuList li:hover{
+    font-weight: 600;
+}
+
+.menuList a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.classes{
+    width: 11%;
+}
+
+.experiments{
+    width: 26.5%;
+    
+}
+
+.podcast{
+    width: 16%;
+    
+}
+
+.protocols{
+    width: 21%;
+}
+
+.searchInput{
+    height: 5vh;
+    border: 2px solid;
+    border-radius: 5px;
+    padding-left: 0.5%;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.searchInput::placeholder{
+    background-image: url('./assets/loupe.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 1.5%;
+    padding-left: 13%;
+}
